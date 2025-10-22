@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luka Varazi</title>
+
+    <!-- Global + Page CSS -->
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="aboutme.css" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome (latest, only one lib) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+      <div class="container">
+        <!-- Brand -->
+        <a href="/index.html" class="navbar-brand">
+          <i class="fas fa-code"></i> Luka Varazi
+        </a>
+
+        <!-- Social Icons + Email (center) -->
+        <div class="nav-icons mx-auto">
+          <a
+            href="https://www.linkedin.com/in/luka-varazi"
+            target="_blank"
+            class="nav-link"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/LukaVarazi"
+            target="_blank"
+            class="nav-link"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/luka_varazi"
+            target="_blank"
+            class="nav-link"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:lukavarazi@gmail.com" class="email-link">
+            lukavarazi@gmail.com
+          </a>
+        </div>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="dropdownMenuButton"
+          >
+            <li>
+              <a class="dropdown-item" href="/index.html"
+                ><i class="fas fa-home"></i> Home</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/about me/aboutme.html"
+                ><i class="fas fa-user"></i> About Me</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/projects/projects.html"
+                ><i class="fas fa-briefcase"></i> Projects</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/index.html#contact"
+                ><i class="fas fa-envelope"></i> Contact</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/resume.pdf" download
+                ><i class="fa-solid fa-download"></i> Resume</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== HEADER ===== -->
+    <header class="about-header text-center">
+      <div class="container">
+        <h1 class="about-title">
+          Building the Future, One Line of Code at a Time
+        </h1>
+        <p class="about-subtitle">
+          Turning ideas into clean, intelligent, and efficient software.
+        </p>
+      </div>
+    </header>
+
+    <!-- ===== BACKGROUND ===== -->
+    <section id="background" class="about-section">
+      <div class="container">
+        <div class="row align-items-center gx-5">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="profile-square rounded-4 shadow-lg overflow-hidden">
+              <img src="/images/Pfp.jpg" alt="Luka Varazi portrait" />
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <h2 class="section-title text-accent">
+              <i class="fas fa-user"></i> Background
+            </h2>
+
+            <p class="lead">
+              I’m <strong>Luka Varazi</strong>, a
+              <strong>Computer Science student</strong> at
+              <strong>Florida International University</strong> in the Honors
+              College. My focus lies in building software that blends
+              <span class="highlight"
+                >efficiency, functionality, and design</span
+              >. I’m passionate about developing tools that make technology
+              smarter, faster, and more secure.
+            </p>
+
+            <p>
+              I’ve earned a <strong>3.97 GPA</strong> and been named to the
+              <strong>Dean’s List twice</strong>. Through hackathons, research,
+              and production work, I’ve developed strong foundations in
+              <strong
+                >software engineering, AI, and full-stack development</strong
+              >.
+            </p>
+
+            <p class="small muted">
+              I thrive in environments that challenge me to create — whether
+              it’s crafting scalable web systems, exploring AI models, or
+              leading collaborative engineering teams.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="about-section alt">
+      <div class="container text-center">
+        <h2 class="section-title text-accent">
+          <i class="fas fa-graduation-cap"></i> Education
+        </h2>
+
+        <div class="timeline mt-5">
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-university"></i></div>
+            <div class="timeline-content">
+              <h3>Florida International University (FIU)</h3>
+              <p class="muted">
+                <em>B.S. Computer Science — Honors College</em>
+              </p>
+              <p>
+                <strong>Junior (first semester)</strong> • GPA 3.97 / 4.00<br />
+                Dean’s List ×2 • Gold & Blue Scholarship
+              </p>
+              <p>Associations: INIT FIU, CodePath, CodeCrunch</p>
+            </div>
+          </div>
+
+          <div class="timeline-item future">
+            <div class="timeline-icon">
+              <i class="fas fa-hourglass-half"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>Ongoing Learning</h3>
+              <p>
+                <a
+                  href="https://cs50.harvard.edu/x/"
+                  target="_blank"
+                  class="timeline-link"
+                  >Harvard CS50x</a
+                >
+                •
+                <a
+                  href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+                  target="_blank"
+                  class="timeline-link"
+                  >Angela Yu’s Web Dev Bootcamp</a
+                >
+                •
+                <a
+                  href="https://www.udemy.com/course/100-days-of-code/"
+                  target="_blank"
+                  class="timeline-link"
+                  >Python Pro Bootcamp</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="about-section">
+      <div class="container">
+        <h2 class="section-title text-accent text-center">
+          <i class="fas fa-briefcase"></i> Work Experience
+        </h2>
+
+        <div class="experience-grid mt-5">
+          <div class="experience-card glass">
+            <h4>Full-Stack Developer — RenArc Group</h4>
+            <p class="muted">July 2025 – Present</p>
+            <p>
+              Designed and launched a
+              <strong>fully functional remodeling company website</strong> built
+              with
+              <strong
+                >Flask, HTML, CSS, JavaScript, Bootstrap, and Tailwind</strong
+              >. Developed client and admin forms, optimized backend scheduling,
+              and deployed a responsive production build for real-world use.
+            </p>
+          </div>
+
+          <div class="experience-card glass">
+            <h4>Marketing Project Assistant — Ideograph LLC</h4>
+            <p class="muted">Internship</p>
+            <p>
+              Collaborated with the marketing team to plan, organize, and
+              execute digital marketing campaigns. Improved project tracking
+              workflows and strengthened communication pipelines between
+              creative and technical teams.
+            </p>
+          </div>
+
+          <div class="experience-card glass">
+            <h4>Video Production Intern — Global Vision Caucasus</h4>
+            <p class="muted">Internship</p>
+            <p>
+              Assisted in editing and coordinating video content for
+              cross-regional projects. Gained experience in media management and
+              cross-cultural collaboration.
+            </p>
+          </div>
+
+          <div class="experience-card glass">
+            <h4>Peer Mentor — Florida International University</h4>
+            <p class="muted">Volunteer Position</p>
+            <p>
+              Mentored incoming international students, guiding them through
+              their academic and social transition into university life.
+              Enhanced leadership and communication skills while contributing to
+              the campus community.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="about-section alt">
+      <div class="container">
+        <h2 class="section-title text-accent text-center">
+          <i class="fas fa-code"></i> Skills
+        </h2>
+        <p class="section-text text-center mb-5">
+          A blend of <span class="highlight">technical expertise</span>,
+          <span class="highlight">problem-solving</span>, and
+          <span class="highlight">team-driven collaboration</span>.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-block">
+            <h4 class="skill-heading">Programming Languages</h4>
+            <ul class="skill-list">
+              <li>Java (2 yrs)</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>C</li>
+              <li>HTML / CSS</li>
+            </ul>
+          </div>
+
+          <div class="skill-block">
+            <h4 class="skill-heading">Frameworks & Tools</h4>
+            <ul class="skill-list">
+              <li>Flask</li>
+              <li>Bootstrap</li>
+              <li>Tailwind CSS</li>
+              <li>jQuery</li>
+            </ul>
+          </div>
+
+          <div class="skill-block">
+            <h4 class="skill-heading">Software & Platforms</h4>
+            <ul class="skill-list">
+              <li>Git / GitHub</li>
+              <li>VS Code</li>
+              <li>IntelliJ IDEA</li>
+              <li>Google Cloud (ADK)</li>
+            </ul>
+          </div>
+
+          <div class="skill-block">
+            <h4 class="skill-heading">Core Knowledge</h4>
+            <ul class="skill-list">
+              <li>Data Structures & Algorithms</li>
+              <li>Object-Oriented Programming</li>
+              <li>Discrete Math, Calculus, Probability</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+      // Back-to-top button logic
+      const topBtn = document.getElementById("backToTop");
+
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          topBtn.style.display = "flex";
+        } else {
+          topBtn.style.display = "none";
+        }
+      };
+
+      topBtn.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+    </script>
+
+    <!-- Bootstrap JS (bundle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Global site script -->
+    <script src="/global.js"></script>
+  </body>
+</html>
