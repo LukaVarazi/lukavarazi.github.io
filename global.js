@@ -48,7 +48,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 document.addEventListener("DOMContentLoaded", () => {
   // Select all elements that are NOT navbar or inside navbar
   const elements = document.querySelectorAll(
-    "body *:not(.navbar):not(.navbar *)"
+    "body *:not(#navbar):not(#navbar *)" +
+      ":not(.project-description):not(.project-overlay)"
   );
 
   // Add animate-on-scroll class
@@ -71,3 +72,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   elements.forEach((el) => observer.observe(el));
 });
+
