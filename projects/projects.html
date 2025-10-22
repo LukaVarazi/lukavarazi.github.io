@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luka Varazi</title>
+
+    <!-- Global + Page CSS -->
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="projects.css" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome (latest, only one lib) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+      <div class="container">
+        <!-- Brand -->
+        <a href="/index.html" class="navbar-brand">
+          <i class="fas fa-code"></i> Luka Varazi
+        </a>
+
+        <!-- Social Icons + Email (center) -->
+        <div class="nav-icons mx-auto">
+          <a
+            href="https://www.linkedin.com/in/luka-varazi"
+            target="_blank"
+            class="nav-link"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/LukaVarazi"
+            target="_blank"
+            class="nav-link"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/luka_varazi"
+            target="_blank"
+            class="nav-link"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:lukavarazi@gmail.com" class="email-link">
+            lukavarazi@gmail.com
+          </a>
+        </div>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="dropdownMenuButton"
+          >
+            <li>
+              <a class="dropdown-item" href="/index.html"
+                ><i class="fas fa-home"></i> Home</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/about me/aboutme.html"
+                ><i class="fas fa-user"></i> About Me</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/projects/projects.html"
+                ><i class="fas fa-briefcase"></i> Projects</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/index.html#contact"
+                ><i class="fas fa-envelope"></i> Contact</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/resume.pdf" download
+                ><i class="fa-solid fa-download"></i> Resume</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="projects-header text-center">
+      <div class="container">
+        <h1 class="projects-title">Some of My Work</h1>
+        <p class="projects-subtitle">
+          A showcase of my recent projects — each built with a passion for
+          design, functionality, and clean code.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Project 1: SnapShell (Newest) ===== -->
+    <section id="project-snapshell" class="project-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Carousel Left -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div
+              id="carouselSnapShell"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner rounded-4 shadow-lg">
+                <div class="carousel-item active">
+                  <img
+                    src="/images/snapshell.png"
+                    class="d-block w-100"
+                    alt="SnapShell AI Email Assistant"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/images/snapshell2.png"
+                    class="d-block w-100"
+                    alt="SnapShell UI preview"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/images/snapshell3.png"
+                    class="d-block w-100"
+                    alt="SnapShell UI preview"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselSnapShell"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselSnapShell"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Text Right -->
+          <div class="col-lg-6">
+            <div class="project-text">
+              <h2 class="project-title text-accent">
+                SnapShell – AI Email Assistant
+              </h2>
+              <p class="project-date">September 2025</p>
+              <hr class="project-divider" />
+              <p class="project-description">
+                SnapShell is an
+                <span class="highlight">AI-powered Chrome extension</span> built
+                during <strong>ShellHacks 2025</strong> for the Google Cloud and
+                Assurant challenge. It assists users by
+                <span class="highlight"
+                  >sorting, summarizing, and drafting email responses</span
+                >
+                directly within their inbox. Developed using
+                <strong
+                  >Google’s ADK, Gemini 2.5 Flash, Python, HTML, CSS, and
+                  JavaScript</strong
+                >, the extension integrates on the client side for secure and
+                private AI assistance. I led a team of developers to create a
+                seamless interface, optimize API calls, and present our final
+                product to judges. SnapShell showcases my strength in
+                <span class="highlight"
+                  >AI integration, teamwork, and full-stack innovation under
+                  time constraints</span
+                >.
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=Q0L-yhQk-a8"
+                class="btn glass-btn"
+                target="_blank"
+                ><i class="fas fa-video"></i> Watch Demo</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Project 2: RenArc ===== -->
+    <section id="project-renarc" class="project-section">
+      <div class="container">
+        <div class="row align-items-center flex-lg-row-reverse">
+          <!-- Carousel Right -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div
+              id="carouselRenArc"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner rounded-4 shadow-lg">
+                <div class="carousel-item active">
+                  <img
+                    src="/images/renarc.jpg"
+                    class="d-block w-100"
+                    alt="RenArc website homepage"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/images/renarc.jpg"
+                    class="d-block w-100"
+                    alt="RenArc admin panel"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselRenArc"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselRenArc"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Text Left -->
+          <div class="col-lg-6">
+            <div class="project-text">
+              <h2 class="project-title text-accent">
+                RenArc Remodeling Website
+              </h2>
+              <p class="project-date">July 2025 – Present</p>
+              <hr class="project-divider" />
+              <p class="project-description">
+                RenArc is a
+                <span class="highlight">fully functional business website</span>
+                developed for a remodeling and renovation company. Designed and
+                launched from the ground up, it emphasizes
+                <strong>performance, usability, and clean UI/UX design</strong>.
+                Built using
+                <strong
+                  >HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and
+                  Flask</strong
+                >, it supports dual form submissions — one for clients and
+                another for admin operations. The backend streamlines
+                scheduling, while the responsive front end adapts beautifully
+                across devices. RenArc showcases my
+                <span class="highlight">full-stack development</span> skills and
+                ability to deliver production-quality systems to real clients.
+              </p>
+              <a href="#" class="btn glass-btn" target="_blank"
+                ><i class="fab fa-github"></i> View Repository</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Project 3: GuiltBytes (Oldest) ===== -->
+    <section id="project-guiltbytes" class="project-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Carousel Left -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div
+              id="carouselGuiltBytes"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner rounded-4 shadow-lg">
+                <div class="carousel-item active">
+                  <img
+                    src="/images/guiltbytes.png"
+                    class="d-block w-100"
+                    alt="GuiltBytes app interface"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/images/guiltbytes2.png"
+                    class="d-block w-100"
+                    alt="BMI tracker view"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/images/guiltbytes3.png"
+                    class="d-block w-100"
+                    alt="BMI tracker view"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselGuiltBytes"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselGuiltBytes"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Text Right -->
+          <div class="col-lg-6">
+            <div class="project-text">
+              <h2 class="project-title text-accent">GuiltBytes</h2>
+              <p class="project-date">September 2024</p>
+              <hr class="project-divider" />
+              <p class="project-description">
+                GuiltBytes was my
+                <span class="highlight">first-ever hackathon project</span>,
+                built during <strong>ShellHacks 2024</strong>. It’s a web app
+                that helps users
+                <span class="highlight"
+                  >track unhealthy eating habits, calculate BMI, and view
+                  personalized health statistics</span
+                >. Created using
+                <strong>HTML, CSS, JavaScript, and Bootstrap</strong>,
+                GuiltBytes introduced me to responsive design and data-driven
+                user interfaces. The experience taught me how to take an idea
+                from concept to completion in under 36 hours — sparking my
+                passion for practical, user-oriented software development.
+              </p>
+              <a
+                href="https://github.com/nafiulkhalid/ShellHacks-24"
+                class="btn glass-btn"
+                target="_blank"
+                ><i class="fas fa-globe"></i> Visit Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+      // Back-to-top button logic
+      const topBtn = document.getElementById("backToTop");
+
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          topBtn.style.display = "flex";
+        } else {
+          topBtn.style.display = "none";
+        }
+      };
+
+      topBtn.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+    </script>
+
+    <!-- Bootstrap JS (bundle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Global site script -->
+    <script src="/global.js"></script>
+  </body>
+</html>

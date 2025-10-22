@@ -1,0 +1,91 @@
+.project-section {
+  padding: 120px 0;
+  color: #f3f4f6;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 20px;
+  backdrop-filter: var(--glass-backdrop);
+  margin-bottom: 120px; /* space between sections */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.project-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.project-date {
+  font-size: 1rem;
+  color: #9ecfff;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.project-divider {
+  /* Use shared project/section divider moved to global.css */
+  width: 80px;
+  height: 4px;
+  background: var(--muted-divider);
+  border-radius: 2px;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.project-description {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #f0f0f0;
+}
+
+.project-description .highlight {
+  color: #7dc0ff;
+  font-weight: 600;
+}
+
+.carousel-inner img {
+  height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+@media (max-width: 992px) {
+  .project-text {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .carousel-inner img {
+    height: 300px;
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+}
+
+.projects-header {
+  padding: 120px 0 60px 0;
+}
+
+.projects-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #7dc0ff;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.projects-subtitle {
+  color: #d7e5f3;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
