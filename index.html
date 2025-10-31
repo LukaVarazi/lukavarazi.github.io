@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luka Varazi</title>
+
+    <!-- Global + Page CSS -->
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="/home/index.css" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome (latest, only one lib) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+      <div class="container">
+        <!-- Brand -->
+        <a href="index.html" class="navbar-brand">
+          <i class="fas fa-code"></i> Luka Varazi
+        </a>
+
+        <!-- Social Icons + Email (center) -->
+        <div class="nav-icons mx-auto">
+          <a
+            href="https://www.linkedin.com/in/luka-varazi"
+            target="_blank"
+            class="nav-link"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/LukaVarazi"
+            target="_blank"
+            class="nav-link"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/luka_varazi"
+            target="_blank"
+            class="nav-link"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:lukavarazi@gmail.com" class="email-link">
+            lukavarazi@gmail.com
+          </a>
+        </div>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="dropdownMenuButton"
+          >
+            <li>
+              <a class="dropdown-item" href="#home"
+                ><i class="fas fa-home"></i> Home</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/about me/aboutme.html"
+                ><i class="fas fa-user"></i> About Me</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/projects/projects.html"
+                ><i class="fas fa-briefcase"></i> Projects</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#contact"
+                ><i class="fas fa-envelope"></i> Contact</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="resume.pdf" download
+                ><i class="fa-solid fa-download"></i> Resume</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Image -->
+          <div class="col-lg-6">
+            <img
+              src="/images/Pfp.jpg"
+              alt="Hero Image"
+              class="hero-image"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Text -->
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <h1 class="hero-title">Hi, I'm Luka Varazi</h1>
+              <hr class="hero-divider" />
+              <p class="hero-text">
+                A Computer Science Honors student at FIU driven by curiosity and
+                creativity. I’m passionate about software engineering,
+                artificial intelligence, and game development — always eager to
+                learn new technologies and build projects that solve real-world
+                problems.
+              </p>
+              <a
+                class="btn glass-btn"
+                href="/resume.pdf"
+                download="Luka_SWE_Resume.pdf"
+              >
+                <i class="fa-solid fa-download"></i> Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="hero-title text-center">Some of my Work</h2>
+        <div class="projects-divider"></div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <a
+            href="/projects/projects.html#project-morganizer"
+            target="_self"
+            class="project-card"
+          >
+            <img
+              src="/images/morgan1.png"
+              alt="SnapShell Email Assistant"
+              class="project-image"
+              loading="lazy"
+            />
+            <div class="project-overlay">
+              <h3 class="project-title">Morganizer</h3>
+              <p class="project-description">
+                AI legal assistant that parses client messages, identifies
+                tasks, and routes them to expert agents.
+              </p>
+            </div>
+          </a>
+          <!-- Project 2 -->
+          <a
+            href="/projects/projects.html#project-snapshell"
+            target="_self"
+            class="project-card"
+          >
+            <img
+              src="/images/snapshell.png"
+              alt="SnapShell Email Assistant"
+              class="project-image"
+              loading="lazy"
+            />
+            <div class="project-overlay">
+              <h3 class="project-title">SnapShell Email Assistant</h3>
+              <p class="project-description">
+                AI Chrome extension that summarizes emails and provides drafts.
+              </p>
+            </div>
+          </a>
+
+          <!-- Project 3 -->
+          <a
+            href="/projects/projects.html#project-renarc"
+            target="_self"
+            class="project-card"
+          >
+            <img
+              src="/images/renarc.jpg"
+              alt="RenArc Website"
+              class="project-image"
+              loading="lazy"
+            />
+            <div class="project-overlay">
+              <h3 class="project-title">RenArc Website</h3>
+              <p class="project-description">
+                A fully custom, responsive website built from scratch for a
+                startup company.
+              </p>
+            </div>
+          </a>
+          <!-- Project 4 -->
+          <a
+            href="/projects/projects.html#project-guiltbytes"
+            target="_self"
+            class="project-card"
+          >
+            <img
+              src="/images/guiltbytes.png"
+              alt="GuiltBytes Project"
+              class="project-image"
+              loading="lazy"
+            />
+            <div class="project-overlay">
+              <h3 class="project-title">GuiltBytes</h3>
+              <p class="project-description">
+                A health-tracking web app to log unhealthy foods, display
+                instant stats, and track BMI.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="hero-title text-center mb-4">Get In Touch</h2>
+            <div class="section-divider"></div>
+            <p class="text-center mb-5">
+              Have a project in mind or want to collaborate? Send me a message
+              and I'll get back to you as soon as possible.
+            </p>
+
+            <form
+              action="https://formsubmit.co/lukavarazi@gmail.com"
+              method="POST"
+              class="contact-form"
+            >
+              <!-- Optional hidden inputs for customization -->
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_subject"
+                value="New message from website"
+              />
+              <!-- You can add _next if you want a thank-you redirect -->
+              <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html" /> -->
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-4">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="example@email.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="subject" class="form-label">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  name="subject"
+                  placeholder="Type in Subject"
+                  required
+                />
+              </div>
+
+              <div class="mb-4">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Type your message here..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn glass-btn">
+                  <span class="btn-text">Send Message</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+      // Back-to-top button logic
+      const topBtn = document.getElementById("backToTop");
+
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          topBtn.style.display = "flex";
+        } else {
+          topBtn.style.display = "none";
+        }
+      };
+
+      topBtn.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+    </script>
+
+    <!-- Bootstrap JS (bundle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Global site script -->
+    <script src="global.js"></script>
+    <!-- Page script -->
+    <script src="/home/index.js"></script>
+  </body>
+</html>
